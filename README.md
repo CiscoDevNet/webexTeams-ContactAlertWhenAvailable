@@ -37,7 +37,7 @@ I created a: <br />
   * New **[WebEx Teams Bot](https://developer.webex.com/docs/bots)** (for an “inside-org-permanent” API token)  <br />
   * cURL command & parsing statement to retrieve the user status  <br />
 <details>
-      <summary>Sample Command"</summary>
+      <summary>Sample Command</summary>
 
  ```concole
 curl -s --request GET --url 'https://api.ciscospark.com/v1/people?email=ymeloch%40cisco.com' --header 'Authorization: Bearer [TOKEN]' | json_pp | grep status | awk '{print $3}' | tr -dc '[:alnum:]'
@@ -49,7 +49,7 @@ curl -s --request GET --url 'https://api.ciscospark.com/v1/people?email=ymeloch%
     - Execute (10 sec. loop) in the background the cURL command  <br />
     - Notify when the user becomes active :smiley:  <br />
 <details>
-      <summary>Sample Command"</summary>
+      <summary>Sample Command</summary>
 
  ```concole
  set userName to text returned of (display dialog "Enter a CEC User Name (e.g., ymeloch)" default answer "" with title "WebEx Teams - Active User Notification" with icon note)
@@ -79,22 +79,20 @@ curl -s --request GET --url 'https://api.ciscospark.com/v1/people?email=ymeloch%
     ```concole
     cd /tmp
     git clone https://github.com/CiscoDevNet/webexTeams-ContactAlertWhenAvailable.git
-    cd webexTeams-ContactAlertWhenAvailable.git
+    cd webexTeams-ContactAlertWhenAvailable
     ```
 
 ## Configuration & Usage
-8. Using your preferred editor, edit the "userActiveNotification.scpt" file and replace the **TOKEN** entry with your WebEx Teams Bot Token ID. <br />
+8. Using your preferred editor, edit the "userActiveNotification.scpt" file and replace the **[TOKEN]** entry with your WebEx Teams Bot Token ID. <br />
 
 9. Save the file. <br />
 
 10. Copy the modified file to AppleScript scripts folder (**`/Users/[user-ID]/Library/Scripts`** ). <br />
 
-11. Run the script. <br />
-
-12. If the "Show Script menu in menu bar" option is enabled, you can run the script from the menu bar. <br />
+11. Run the script (If the "Show Script menu in menu bar" option is enabled, you can run the script from the menu bar). <br />
 
 ### Tools & Frameworks:
-  * This code requires Mac OS
+  * This code requires a Mac OS
 
 ## Getting help & involved
 Need help with the code? Got questions/concerns? Want to provide feedback? <br />
