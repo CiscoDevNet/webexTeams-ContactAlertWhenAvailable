@@ -19,7 +19,7 @@ What can we do.. what can we do.. let’s think… <br /> <br />
 
 1. Does WebEx Teams expose its **[API](https://developer.webex.com/docs/platform-introduction)**? ***YES!*** :thumbsup: <br />
 2. Is there an **[API call](https://developer.webex.com/docs/api/v1/people/list-people)** to check a user connection status? ***YES!*** :thumbsup: <br />
-3. Can I use a **[CLI command](https://community.cisco.com/t5/data-center-blogs/getting-started-with-curl/ba-p/3837348)** to trigger an API call? ***YES!*** :thumbsup: <br /> <br />
+3. Can I use a **[CLI command](https://community.cisco.com/t5/data-center-blogs/getting-started-with-curl/ba-p/3837348)** to trigger an API call? ***YES!*** :thumbsup: <br /> 
 
 Interesting! But... <br />
   * How can I add a new option to the WebEx Teams chat menu? <br />
