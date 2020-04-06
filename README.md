@@ -1,5 +1,15 @@
 # How To Improve WebEx Teams (IM) Productivity?
 
+## Table of Contents
+- [The Challenge and suggested solution](#the-challenge-and-suggested-solution)
+- [Script Initialization](#configuration--usage)
+- [Tools & Frameworks](#tools--frameworks)
+- [Getting help & involved](#getting-help--involved)
+- [Authors & Maintainers](#authors--maintainers)
+- [Licensing info](#licensing-info)
+
+## The Challenge and suggested solution
+
 Do you know/remember this GREAT feature in the Jabber chat menu? <br />
 ![json](images/pic1-Jabber.png?raw=true "Import JSON") <br />
 
@@ -19,7 +29,7 @@ What can we do.. what can we do.. let’s think… <br /> <br />
 
 1. Does WebEx Teams expose its **[API](https://developer.webex.com/docs/platform-introduction)**? ***YES!*** :thumbsup: <br />
 2. Is there an **[API call](https://developer.webex.com/docs/api/v1/people/list-people)** to check a user connection status? ***YES!*** :thumbsup: <br />
-3. Can I use a **[CLI command](https://community.cisco.com/t5/data-center-blogs/getting-started-with-curl/ba-p/3837348)** to trigger an API call? ***YES!*** :thumbsup: <br /> 
+3. Can I use a **[CLI command](https://community.cisco.com/t5/data-center-blogs/getting-started-with-curl/ba-p/3837348)** to trigger an API call? ***YES!*** :thumbsup: <br />
 
 Interesting! But... <br />
   * How can I add a new option to the WebEx Teams chat menu? <br />
@@ -35,6 +45,17 @@ Interesting! But... <br />
 
 I created a: <br />
   * New **[WebEx Teams Bot](https://developer.webex.com/docs/bots)** (for an “inside-org-permanent” API token)  <br />
+<details>
+      <summary>Procedure</summary>
+- Click on the Hyperlink
+- Log in to Cisco WebEx Developer site
+- Under the "Bots" main section, click on "Create a Bot"
+- Enter the required information (e.g. Bot name, username). Note: make sure that the Bot username is valid and available)
+- Once done, click on "Add Bot"
+- The next window will include the following: "Bot's Access Token" and "Bot ID" (You will need the Token ID for step #8)
+
+</details>
+
   * cURL command & parsing statement to retrieve the user status  <br />
 <details>
       <summary>Sample Command</summary>
@@ -91,7 +112,7 @@ curl -s --request GET --url 'https://api.ciscospark.com/v1/people?email=ymeloch%
 
 11. Run the script (If the "Show Script menu in menu bar" option is enabled, you can run the script from the menu bar). <br />
 
-### Tools & Frameworks:
+### Tools & Frameworks
   * This code requires a Mac OS
 
 ## Getting help & involved
