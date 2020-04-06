@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [The Challenge and suggested solution](#the-challenge-and-suggested-solution)
-- [Script Initialization](#configuration--usage)
+- [Script Initialization](#script-initialization)
 - [Tools & Frameworks](#tools--frameworks)
 - [Getting help & involved](#getting-help--involved)
 - [Authors & Maintainers](#authors--maintainers)
@@ -47,12 +47,12 @@ I created a: <br />
   * New **[WebEx Teams Bot](https://developer.webex.com/docs/bots)** (for an “inside-org-permanent” API token)  <br />
 <details>
       <summary>Procedure</summary>
-- Click on the Hyperlink
-- Log in to Cisco WebEx Developer site
-- Under the "Bots" main section, click on "Create a Bot"
-- Enter the required information (e.g. Bot name, username). Note: make sure that the Bot username is valid and available)
-- Once done, click on "Add Bot"
-- The next window will include the following: "Bot's Access Token" and "Bot ID" (You will need the Token ID for step #8)
+- Click on the Hyperlink <br />
+- Log in to Cisco WebEx Developer site <br />
+- Under the "Bots" main section, click on "Create a Bot" <br />
+- Enter the required information (e.g. Bot name, username). Note: make sure that the Bot username is valid and available) <br />
+- Once done, click on "Add Bot" <br />
+- The next window will include the following: "Bot's Access Token" and "Bot ID" (You will need the Token ID for step #8) <br />
 
 </details>
 
@@ -104,7 +104,7 @@ curl -s --request GET --url 'https://api.ciscospark.com/v1/people?email=ymeloch%
     ```
 
 ## Configuration & Usage
-8. Using your preferred editor, edit the "userActiveNotification.scpt" file and replace the **[TOKEN]** entry with your WebEx Teams Bot Token ID. <br />
+8. Using your preferred editor, edit the "userActiveNotification.scpt" file and replace the **[TOKEN]** entry with your WebEx Teams Bot Token ID (Note: For Token information, please check above under the "New **[WebEx Teams Bot](https://developer.webex.com/docs/bots)** (for an “inside-org-permanent” API token) section"). <br />
 
 9. Save the file. <br />
 
